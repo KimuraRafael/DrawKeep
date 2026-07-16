@@ -1,4 +1,4 @@
-package br.com.DrawKeep.DrawKeep.Enums;
+package br.com.DrawKeep.DrawKeep.entity.enums;
 
 public enum DeckSection {
 
