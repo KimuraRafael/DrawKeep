@@ -1,6 +1,6 @@
-package br.com.DrawKeep.DrawKeep.Entity;
+package br.com.DrawKeep.DrawKeep.entity;
 
-import br.com.DrawKeep.DrawKeep.Enums.DeckSection;
+import br.com.DrawKeep.DrawKeep.entity.enums.DeckSection;
 import jakarta.persistence.*;
 
 import java.util.UUID;
