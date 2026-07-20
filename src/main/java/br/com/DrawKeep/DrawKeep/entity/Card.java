@@ -14,7 +14,7 @@ import java.util.UUID;
 public class Card {
 
     @Id
-    @Column(name = "card_id", nullable = false, updatable = false)
+    @Column(name = "oracle_id", nullable = false, updatable = false)
     private UUID cardID;
 
     @Column(nullable = false)
