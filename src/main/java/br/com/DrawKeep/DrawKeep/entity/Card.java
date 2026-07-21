@@ -66,7 +66,7 @@ public class Card {
      */
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
-            name = "card_subtypes",
+            name = "card_subtype_links",
             joinColumns = @JoinColumn(name = "card_id"),
             inverseJoinColumns = @JoinColumn(name = "subtype_id"),
             uniqueConstraints = {
