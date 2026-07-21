@@ -7,6 +7,6 @@ CREATE TABLE card_supertypes
 
     CONSTRAINT fk_card_supertypes_card
         FOREIGN KEY (card_id)
-            REFERENCES cards (oracle_id)
+            REFERENCES cards (id)
             ON DELETE CASCADE
 );

@@ -6,6 +6,6 @@ CREATE TABLE card_types
     CONSTRAINT pk_card_types PRIMARY KEY (card_id, type),
     CONSTRAINT fk_card_types_card
         FOREIGN KEY (card_id)
-            REFERENCES cards (oracle_id)
+            REFERENCES cards (id)
             ON DELETE CASCADE
 );

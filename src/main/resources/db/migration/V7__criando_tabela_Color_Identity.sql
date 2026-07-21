@@ -6,6 +6,6 @@ CREATE TABLE card_color_identity
     CONSTRAINT pk_card_color_identity PRIMARY KEY (card_id, color),
     CONSTRAINT fk_card_color_identity_card
         FOREIGN KEY (card_id)
-            REFERENCES cards (oracle_id)
+            REFERENCES cards (id)
             ON DELETE CASCADE
 );

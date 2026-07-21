@@ -6,7 +6,7 @@ CREATE TABLE card_subtype_links
     CONSTRAINT pk_card_subtype_links PRIMARY KEY (card_id, subtype_id),
     CONSTRAINT fk_card_subtype_links_card
         FOREIGN KEY (card_id)
-            REFERENCES cards (oracle_id)
+            REFERENCES cards (id)
             ON DELETE CASCADE,
     CONSTRAINT fk_card_subtype_links_subtype
         FOREIGN KEY (subtype_id)

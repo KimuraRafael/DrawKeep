@@ -13,9 +13,14 @@ import java.util.UUID;
 @Table(name = "cards")
 public class Card {
 
+
     @Id
-    @Column(name = "oracle_id", nullable = false, updatable = false)
-    private UUID cardID;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(name = "id", nullable = false, updatable = false)
+    private UUID cardId;
+
+    @Column(name = "oracle_id", unique = true)
+    private UUID oracleId;
 
     @Column(nullable = false)
     private String name;
@@ -117,12 +122,18 @@ public class Card {
     }
 
     public UUID getCardID() {
-        return cardID;
+        return cardId;
     }
 
     public void setCardID(UUID cardID) {
-        this.cardID = cardID;
+        this.cardId = cardID;
     }
+
+    public UUID getOracleId() {
+        return oracleId;
+    }
+
+    public void setOracleId(UUID oracleId) {this.oracleId = oracleId;}
 
     public String getName() {
         return name;

@@ -15,7 +15,7 @@ CREATE TABLE deck_cards
 
     CONSTRAINT fk_deck_cards_card
         FOREIGN KEY (card_id)
-            REFERENCES cards (oracle_id)
+            REFERENCES cards (id)
             ON DELETE RESTRICT,
 
     CONSTRAINT ck_deck_cards_quantity_positive
