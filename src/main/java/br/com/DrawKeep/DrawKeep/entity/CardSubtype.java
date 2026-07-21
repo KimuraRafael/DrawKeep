@@ -4,11 +4,12 @@ import br.com.DrawKeep.DrawKeep.entity.enums.SubtypeCategory;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="card_subtype")
+@Table(name="card_subtypes")
 public class CardSubtype {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
     private String name;
