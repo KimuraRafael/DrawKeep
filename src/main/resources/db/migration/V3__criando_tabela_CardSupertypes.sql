@@ -1,7 +1,12 @@
-CREATE TABLE card_subtypes (
-        id BIGSERIAL PRIMARY KEY,
-        name VARCHAR(100) NOT NULL,
-        category VARCHAR(50),
-        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-        CONSTRAINT uk_card_subtypes_name UNIQUE (name)
+CREATE TABLE card_supertypes
+(
+    card_id   UUID        NOT NULL,
+    supertype VARCHAR(50) NOT NULL,
+
+    CONSTRAINT pk_card_supertypes PRIMARY KEY (card_id, supertype),
+
+    CONSTRAINT fk_card_supertypes_card
+        FOREIGN KEY (card_id)
+            REFERENCES cards (oracle_id)
+            ON DELETE CASCADE
 );
