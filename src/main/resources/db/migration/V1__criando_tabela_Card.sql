@@ -3,7 +3,8 @@ EXTENSION IF NOT EXISTS pgcrypto;
 
 CREATE TABLE cards
 (
-    oracle_id        UUID PRIMARY KEY,
+    id               UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    oracle_id        UUID UNIQUE,
     scryfall_id      UUID UNIQUE,
     name             VARCHAR(255) NOT NULL,
     mana_cost        VARCHAR(100),
