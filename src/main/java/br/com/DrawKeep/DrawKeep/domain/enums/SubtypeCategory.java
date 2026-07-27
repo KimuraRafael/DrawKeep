@@ -1,4 +1,4 @@
-package br.com.DrawKeep.DrawKeep.entity.enums;
+package br.com.DrawKeep.DrawKeep.domain.enums;
 
 public enum SubtypeCategory {
 

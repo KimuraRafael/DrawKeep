@@ -1,6 +1,6 @@
-package br.com.DrawKeep.DrawKeep.entity;
+package br.com.DrawKeep.DrawKeep.domain.model;
 
-import br.com.DrawKeep.DrawKeep.entity.enums.SubtypeCategory;
+import br.com.DrawKeep.DrawKeep.domain.enums.SubtypeCategory;
 import jakarta.persistence.*;
 
 @Entity

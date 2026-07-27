@@ -1,6 +1,6 @@
-package br.com.DrawKeep.DrawKeep.entity;
+package br.com.DrawKeep.DrawKeep.domain.model;
 
-import br.com.DrawKeep.DrawKeep.entity.enums.DeckFormat;
+import br.com.DrawKeep.DrawKeep.domain.enums.DeckFormat;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
