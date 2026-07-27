@@ -1,7 +1,7 @@
-package br.com.DrawKeep.DrawKeep.application;
+package br.com.drawkeep.application;
 
-import br.com.DrawKeep.DrawKeep.domain.model.Card;
-import br.com.DrawKeep.DrawKeep.adapter.out.persistence.CardRepository;
+import br.com.drawkeep.domain.model.Card;
+import br.com.drawkeep.adapter.out.persistence.CardRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

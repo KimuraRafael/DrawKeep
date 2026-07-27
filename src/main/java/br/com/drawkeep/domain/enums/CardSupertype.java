@@ -1,4 +1,4 @@
-package br.com.DrawKeep.DrawKeep.domain.enums;
+package br.com.drawkeep.domain.enums;
 
 public enum CardSupertype {
 

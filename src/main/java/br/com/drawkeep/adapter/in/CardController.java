@@ -1,7 +1,7 @@
-package br.com.DrawKeep.DrawKeep.adapter.in;
+package br.com.drawkeep.adapter.in;
 
-import br.com.DrawKeep.DrawKeep.domain.model.Card;
-import br.com.DrawKeep.DrawKeep.application.CardService;
+import br.com.drawkeep.domain.model.Card;
+import br.com.drawkeep.application.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

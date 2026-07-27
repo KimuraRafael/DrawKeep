@@ -1,7 +1,7 @@
-package br.com.DrawKeep.DrawKeep.domain.model;
+package br.com.drawkeep.domain.model;
 
-import br.com.DrawKeep.DrawKeep.domain.enums.CardSupertype;
-import br.com.DrawKeep.DrawKeep.domain.enums.CardType;
+import br.com.drawkeep.domain.enums.CardSupertype;
+import br.com.drawkeep.domain.enums.CardType;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;

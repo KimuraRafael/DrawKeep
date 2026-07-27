@@ -1,6 +1,6 @@
-package br.com.DrawKeep.DrawKeep.domain.model;
+package br.com.drawkeep.domain.model;
 
-import br.com.DrawKeep.DrawKeep.domain.enums.DeckSection;
+import br.com.drawkeep.domain.enums.DeckSection;
 import jakarta.persistence.*;
 
 import java.util.UUID;
