@@ -5,6 +5,7 @@ import br.com.drawkeep.adapter.out.persistence.CardRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class CardService {
@@ -22,4 +23,8 @@ public class CardService {
     public Card saveCard(Card card){
         return repository.save(card);
     };
+
+    public void deleteCard(UUID id){
+        repository.deleteById(id);
+    }
 }

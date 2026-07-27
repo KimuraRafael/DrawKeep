@@ -3,16 +3,17 @@ package br.com.drawkeep.domain.model;
 import br.com.drawkeep.domain.enums.CardSupertype;
 import br.com.drawkeep.domain.enums.CardType;
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+@Builder
 @Entity
 @Table(name = "cards")
 public class Card {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -118,7 +119,29 @@ public class Card {
 
     private String layout;
 
-    protected Card() {
+
+    public Card() {
+    }
+
+    public Card(String power, UUID cardId, UUID oracleId, String name, String manaCost, BigDecimal manaValue, String typeLine, String oracleText, String toughness, String loyalty, String defense, Set<CardType> types, Set<CardSupertype> supertypes, Set<CardSubtype> subtypes, Set<String> colors, Set<String> colorIdentity, Set<String> keywords, String layout) {
+        this.power = power;
+        this.cardId = cardId;
+        this.oracleId = oracleId;
+        this.name = name;
+        this.manaCost = manaCost;
+        this.manaValue = manaValue;
+        this.typeLine = typeLine;
+        this.oracleText = oracleText;
+        this.toughness = toughness;
+        this.loyalty = loyalty;
+        this.defense = defense;
+        this.types = types;
+        this.supertypes = supertypes;
+        this.subtypes = subtypes;
+        this.colors = colors;
+        this.colorIdentity = colorIdentity;
+        this.keywords = keywords;
+        this.layout = layout;
     }
 
     public UUID getCardID() {
