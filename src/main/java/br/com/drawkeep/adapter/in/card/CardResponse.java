@@ -1,4 +1,4 @@
-package br.com.drawkeep.adapter.in.dto;
+package br.com.drawkeep.adapter.in.card;
 
 import lombok.Builder;
 

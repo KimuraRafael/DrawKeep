@@ -1,7 +1,5 @@
-package br.com.drawkeep.adapter.in;
+package br.com.drawkeep.adapter.in.card;
 
-import br.com.drawkeep.adapter.in.dto.CardRequest;
-import br.com.drawkeep.adapter.in.dto.CardResponse;
 import br.com.drawkeep.adapter.in.mapper.CardMapper;
 import br.com.drawkeep.application.CardService;
 import br.com.drawkeep.domain.model.Card;

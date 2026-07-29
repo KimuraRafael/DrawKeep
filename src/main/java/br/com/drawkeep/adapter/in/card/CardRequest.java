@@ -1,4 +1,4 @@
-package br.com.drawkeep.adapter.in.dto;
+package br.com.drawkeep.adapter.in.card;
 
 import java.math.BigDecimal;
 import java.util.UUID;

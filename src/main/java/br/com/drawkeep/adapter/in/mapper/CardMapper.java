@@ -1,7 +1,7 @@
 package br.com.drawkeep.adapter.in.mapper;
 
-import br.com.drawkeep.adapter.in.dto.CardRequest;
-import br.com.drawkeep.adapter.in.dto.CardResponse;
+import br.com.drawkeep.adapter.in.card.CardRequest;
+import br.com.drawkeep.adapter.in.card.CardResponse;
 import br.com.drawkeep.domain.model.Card;
 import lombok.experimental.UtilityClass;
 
