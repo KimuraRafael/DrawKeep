@@ -27,4 +27,9 @@ public class CardService {
     public void deleteCard(UUID id){
         repository.deleteById(id);
     }
+
+    public Card findById(UUID id) {
+        return repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Carta não encontrada"));
+    }
 }
