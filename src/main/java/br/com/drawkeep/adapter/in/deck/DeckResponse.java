@@ -6,5 +6,9 @@ import br.com.drawkeep.domain.model.DeckCard;
 import java.util.List;
 import java.util.UUID;
 
-public record DeckResponse(UUID deckId, String name, DeckFormat format, List<DeckCard> cards) {
+public record DeckResponse(
+        UUID deckId,
+        String name,
+        DeckFormat format,
+        List<DeckCardResponse> cards) {
 }

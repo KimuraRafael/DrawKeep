@@ -10,8 +10,8 @@ import java.util.UUID;
 
 public interface DeckRepository extends JpaRepository<Deck, UUID> {
 
-    @EntityGraph(attributePaths = {"cards", "cards.card"})
-    Optional<Deck> findWithCardsByDeckId(UUID deckId);
+    @EntityGraph(attributePaths = {"cards", "cards.card"}) // Sem o EntityGraph o repositório pode trazer só os dados de deck
+    Optional<Deck> findWithCardsByDeckId(UUID deckId); // Encontre um deck pelo deckId, trazendo suas cartas junto.
 
 
 }
